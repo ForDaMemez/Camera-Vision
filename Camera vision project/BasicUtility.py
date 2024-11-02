@@ -34,3 +34,9 @@ cv2.waitKey(0)
 BilScene = cv2.bilateralFilter(scene,99,95,1)
 cv2.imshow("window 5", BilScene)
 cv2.waitKey(0)
+#Border Types:
+#Constant = A solid border around an image, use "value = (B,G,R)", to change the colour of the border
+#Reflective = A border which reflects the image shown around the edges
+Borderpika = cv2.copyMakeBorder(pika,30,30,30,30,cv2.BORDER_CONSTANT, value = (255,0,0))
+cv2.imshow("Window5", Borderpika)
+cv2.waitKey(0)
