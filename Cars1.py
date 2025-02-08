@@ -5,8 +5,8 @@ import cv2
 import os
 import numpy as np
 Carxml = "Assets/cars.xml"
-Vid = "Assets/cars.mp4"
-vid1 = cv2.VideoCapture("Assets/cars.mp4")
+Vid = "Assets/cars+cycle.avi"
+vid1 = cv2.VideoCapture("Assets/cars+cycle.avi")
 car_detection = cv2.CascadeClassifier(Carxml)
 while vid1.isOpened():
   ret,img = vid1.read()
